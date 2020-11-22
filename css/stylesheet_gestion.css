@@ -1,0 +1,39 @@
+
+table, tr, td, a{
+    
+    font-weight: 200;
+    text-align: center;
+    border:none;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    }
+.modal-lg {
+        max-width: 80% !important;
+    }
+.container{
+    width:100%;
+    margin-top:5%;
+}
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+footer.confirmation{
+/*    height: 100%;*/
+/*    background: red;*/
+}
+
+.confirmation{
+    height: 50vh;
+}
+
+button {
+    
+    font-family: Oswald;
+}

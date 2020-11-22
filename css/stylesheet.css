@@ -1,0 +1,1425 @@
+/** polices de caractères, titres, sous-titres.*/
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 4vh;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 3.4vh;
+}
+
+h2 + p {
+    font-size: 1.7vh;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 + p {
+    font-size: 2.2vh;
+    margin-bottom: 3vh;
+}
+
+/** Centrage et largeur du corps de page.*/
+
+
+.container-fluid {
+    margin: auto;
+    width: 90vw;
+}
+
+
+/** Barre de navigation.*/
+
+.navbar {
+    background: #1a1a1a;
+    border-bottom: 7px solid #bf2127;
+/*
+    position: fixed;
+    z-index: 3000;
+    width: 100%;
+*/
+}
+
+
+.navbar-nav {
+    margin-right: 4vw;
+}
+
+.navbar-brand {
+    padding: 3vh 0;
+    margin-right: 0;
+    transition: 0.4s;
+}
+
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+.navbar-brand img {
+    width: 8rem;
+    margin-left: 5vw;
+}
+
+.navbar-nav > .nav-item button {
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.navbar-nav > .nav-item button:hover {
+    color: #bf2127;
+    font-weight: 500;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+
+.navbar-nav > .nav-item button.active {
+    color: #bf2127;
+    transform: scale(1.2);
+}
+
+
+.navbar-nav > .nav-item:nth-child(4) button {
+    background: #bf2127;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.navbar-nav > .nav-item:nth-child(4) button:hover {
+    background: #e00008;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.navbar-nav > .nav-item:nth-child(4) span {
+    width: 70px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 31px;
+
+}
+
+.navbar-nav > .nav-item:nth-child(4) i {
+    font-size: 2.4rem;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+    animation: onconnexion;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    line-height: 32px;
+}
+
+@keyframes onconnexion {
+  from {color: white;}
+  to {color: #3391ff;}
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+
+/** Carrousel.*/
+
+
+.carousel {
+    margin: 0 auto;
+    padding: 0;
+    max-height: 100%;
+    margin-bottom: 8vh;
+
+}
+
+
+.carousel-inner {
+    max-height: 50vw;
+
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-position: 0 -80px;
+
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
+
+
+.carousel-control-prev-icon {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bf2127' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    width: 4vw;
+    height: 4vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+
+}
+
+
+.carousel-control-prev-icon:hover {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e00008' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    transform: scale(1.2);
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.carousel-control-next-icon {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bf2127' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    width: 4vw;
+    height: 4vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+
+}
+
+.carousel-control-next-icon:hover {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e00008' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    transform: scale(1.2);
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.carousel-indicators li {
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    margin: 0 1vh 0 1vh;
+    opacity: 1;
+    background-color: white;
+}
+
+
+.carousel-indicators li:hover {
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+
+
+.carousel-indicators .active {
+    background-color: #bf2127;
+    opacity: 1;
+}
+
+/** cards catégories activites.*/
+
+.card-header {
+    background: #1a1a1a;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vh;
+}
+
+
+.card {
+    background: #eaf2f8;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.20);
+}
+
+.card .btn {
+    background: #bf2127;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+
+.row {
+    margin-bottom: 3vh;
+}
+
+.bouton-card {
+    transition: 0.3s;
+}
+
+.bouton-card:hover {
+    background: #e00008;
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+/** Module de connection.*/
+
+.content-tooltip{
+    display:none;
+}
+
+
+.tootip:hover+span{
+    display: inline;
+    color: red;
+}
+
+
+.modal-header,
+.modal-footer {
+    background: #1a1a1a;
+    color: white;
+}
+
+.modal-footer {
+    background: #1a1a1a;
+    color: white;
+    border-top: 4px solid #bf2127
+}
+
+.centrer-bouton {
+    text-align: center;
+}
+
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #bf2127
+}
+
+
+
+.modal-body button {
+    background: #bf2127;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.modal-body button:hover {
+    background: #e00008;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+#bouton-onglet {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#bouton-onglet:hover {
+    color: #bf2127 !important;
+    transform: scale(1.0.5);
+    transition: 0.3s;
+}
+
+#bodyResponse {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyResponse > p {
+    font-size: 1.1rem;
+}
+
+#bouton-onglet-response {
+    background: #bf2127;
+    border: none;
+    transition: 0.3s;
+}
+
+#bouton-onglet-response:hover {
+    background: #e00008;
+    transition: 0.3s;
+}
+
+
+.modal-content {
+    background-color: #eaf2f8;
+}
+
+span.croix {
+    font-size: 3rem;
+    color: white;
+    text-shadow: none;
+    font-weight: 400;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+span.croix:hover {
+    color: #bf2127;
+    transition: 0.3s;
+}
+
+.message-erreur p {
+    display: none;
+    background: white;
+    height: auto;
+    font-family: 'oswald', sans-serif;
+    line-height: 26px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    color: rgba(0, 0, 0, 0.81);
+    padding: 5px 15px;
+}
+
+#message-erreur-bis {
+    display: none;
+    background: #ffacac;
+    height: auto;
+    font-family: 'oswald', sans-serif;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 5px;
+}
+
+#message-erreur-bis {
+    display: none;
+    background: #ffacac;
+    height: auto;
+    font-family: 'oswald', sans-serif;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 5px;
+}
+
+
+#message-erreur-bis2 {
+    display: block;
+    background: #ffacac;
+    height: auto;
+    font-family: 'oswald', sans-serif;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 5px;
+}
+
+#message-erreur-bis2 i {
+    vertical-align: inherit;
+    padding: 0 10px;
+    text-align: left;
+}
+
+
+/** Aside.*/
+
+
+.aside {
+    min-height: 30vh;
+    margin-top: 10vh;
+}
+
+
+.aside.card img {
+    opacity: 0.45;
+    object-fit: cover;
+    height: 50vh;
+}
+
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+
+.input-group {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.card-title {
+    margin: 0;
+}
+
+.input-group-text {
+    background: #bf2127;
+    text-transform: uppercase;
+}
+
+.aside .input-group .form-control {
+    height: auto;
+}
+
+.aside .input-group .form-control .input-group-text {
+    font-size: 3rem;
+}
+
+/** Footer.*/
+
+
+footer {
+    background: #1a1a1a;
+    border-top: 7px solid #bf2127;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    flex-wrap: wrap
+}
+
+footer div {
+    flex: 1 1 30%;
+}
+
+
+footer div > div:first-child {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+footer div > div:first-child p {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+footer div > div:first-child p:hover {
+    color: #bf2127;
+    transition: 0.2s;
+    font-weight: 300;
+}
+
+.logo img {
+    width: auto;
+    height: 7vh;
+    transition: 0.4s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+
+footer i {
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    color: #bf2127;
+    transition: 0.3s;
+}
+
+
+footer i:hover {
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+footer > div:last-child p {
+    background: #292929;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+/** Page inscription.*/
+
+.inscription {
+    min-height: 70vh;
+    max-height: 80vh;
+    width: 100%;
+    background: url("../images/asphalt-empty-field-163444.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulaire-inscription {
+    text-align: center;
+}
+
+
+h2.card-title-inscription {
+    font-size: 1.4rem;
+    margin: 2rem;
+}
+
+button.envoyer {
+    transition: 0.4s;
+}
+
+button.envoyer:hover {
+    transition: 0.4s;
+    background: #e00008;
+    transform: scale(1.1);
+}
+
+
+.jumbotron {
+    background: #eaf2f8;
+    margin: none;
+
+}
+
+.jumbotron h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+
+}
+
+.jumbotron .lead {
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+}
+
+.intervalle {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.intervalle img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jumbotron .lead a {
+    background: #bf2127;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron .lead a:hover {
+    background: #e00008;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+/** Page activites. */
+
+
+.container-activites {
+    position: relative;
+    width: 100%;
+}
+
+.container-activites img.background {
+    opacity: 0.5;
+    max-height: auto;
+    width: 100%;
+}
+
+
+
+.biopic img.muscu {
+    opacity: 1;
+}
+
+
+h3.nom {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    padding: 10px 20px;
+}
+
+.trait {
+    background: #1a1a1a;
+    height: 3px;
+    width: 3vw;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.text-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    column-count: 2;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    opacity: 1;
+    min-height: 80%;
+}
+
+
+.text-bio h4 {
+    width: 100%;
+}
+
+
+.text-activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    min-height: 80%;
+}
+
+.activite-nom {
+    column-count: 2;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+h4 {
+    text-transform: uppercase;
+    color: #bf2127;
+    font-weight: 400;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+h4 + p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.8vw;
+    color: rgb(46, 46, 46);
+    white-space:normal;
+    text-align: center;
+}
+
+.envoyer {
+    background: #bf2127;
+    text-transform: uppercase;
+}
+
+
+.horaire {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.activite {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.trait-activite {
+    background: #1a1a1a;
+    height: 3px;
+    width: 3vw;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.activite-container img {
+    opacity: 0.6;
+}
+
+/** Page membre. */
+
+.container-activites.membre {
+    min-height: 130vh;
+    max-height: 155vh;
+}
+
+.container-activites .membre {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: url('../images/natation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.container-activites.membre:before {
+    background: url('../images/natation.jpg');
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+
+.text-membre {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    min-width: 80%;
+    text-align: center;
+}
+
+
+.membre img {
+    opacity: 0.5;
+}
+
+.message-acueil {
+    text-align: left;
+    margin-bottom: 6vh;
+}
+
+.text-membre h3 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+
+.formulaire-activites {
+    width: 100%;
+}
+
+.formulaire-activites div:first-child {
+    padding: 0;
+}
+
+.table {
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+
+table > thead > tr > th {
+    color: #bf2127
+}
+
+
+table.table-hover > thead > tr > th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+table.table-hover > tbody > tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+
+.bouton-inscrire.btn-secondary {
+    color: #fff;
+    background-color: #777777 !important;
+    border-color: #5c5c5c !important;
+    color: white;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 0.20rem !important;
+
+}
+
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5c5c5c !important;
+    border-color: #5c5c5c;
+    color: white;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #777777 !important;
+    border-color: red !important;
+    color: white;
+    font-weight: 500;
+    box-shadow: none;
+/*    border:2px solid red;*/
+    outline: 2px solid red;
+    outline-offset: -3.17px;
+}
+
+/** Écrans @< 1050px.*/
+
+
+@media (max-width: 1050px) {
+    .container-activites.membre {
+        min-height: 120vh;
+    }
+    
+     .activite-nom {
+      margin-top:2rem;
+    }
+    
+    .activite{
+    margin-bottom:1.2rem;
+    }
+    
+    .text-membre {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    min-width: 80%;
+    text-align: center;
+}
+}  
+
+
+/** Écrans @< 990px.*/
+
+    
+@media (max-width: 990px) {
+
+    /**  Page accueil. */
+
+    .navbar-brand img {
+        margin: 0;
+    }
+
+    .navbar-brand {
+        padding-bottom: 0;
+    }
+
+    /** page activites, moniteur. */
+
+    .text-bio {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        max-width: 35%;
+        min-width: 35%;
+        text-align: center;
+    }
+
+    .text-bio p {
+        font-size: 2vw;
+    }
+
+    .text-bio h3 {
+        font-size: 3.5vw;
+    }
+
+    .text-bio h4 {
+        font-size: 2vw;
+    }
+
+    /** Page activites, Activite. */
+
+    .horaire {
+        color: red;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .activite {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        margin-bottom: 1.1rem;
+    }
+    
+    .activite span {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    
+    .trait-activite {
+        width: 5vw;
+        border: 1.5px solid black;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .activite-nom {
+        margin-top: 2rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .container-activites.membre {
+        min-height: 120vh;
+    }
+    
+    .text-membre {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    min-width: 80%;
+    text-align: center;
+}
+}
+
+
+/** Écrans @< 700px.*/
+
+
+@media (max-width: 700px) {
+
+    /** Page accueil. */
+
+    .card-img-overlay {
+        width: 100%;
+    }
+
+    .card-img-overlay .input-group input {
+        font-size: 2.5vh;
+    }
+
+    .card-img-overlay .input-group-text {
+        font-size: 1.8vh;
+    }
+
+    /** Footer. */
+
+    footer .flex {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 3vh;
+    }
+
+    footer .flex > div {
+        margin: 4vh 0;
+    }
+
+
+    footer .flex > div p {
+        margin: 1vh;
+    }
+
+    footer .flex > div p {
+        margin: 1vh;
+    }
+
+
+    footer .flex > div:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    footer .flex > div:nth-child(2) {
+        margin: 4vh 0;
+    }
+
+
+    footer .logo img {
+        width: auto;
+        height: 8vh;
+    }
+
+
+    footer .flex > div:last-child i {
+        font-size: 5vh;
+    }
+
+    /** Page activites, moniteur. */
+
+    .text-bio {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        max-width: 35%;
+        min-width: 35%;
+        text-align: center;
+    }
+
+
+    .text-bio p {
+        font-size: 2.5vw;
+    }
+
+
+    .text-bio h3 {
+        font-size: 7vw;
+    }
+
+    .text-bio h4 {
+        font-size: 4vw;
+    }
+
+    .bio h3 {
+        margin: 0;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.22)
+    }
+
+    .bio h4 {
+        font-size: 2.6vh;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.22);
+    }
+
+    .trait {
+        width: 5vw;
+    }
+
+    /** Page activites, activite. */
+
+    .container-activites {
+        height: 60%;
+        overflow: hidden;
+    }
+
+    .container-activites img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .text-activites {
+        width: 100%;
+    }
+
+    .text-activites h3 {
+        font-size: 3vh;
+        margin-bottom: 3rem;
+    }
+
+    .activite {
+        line-height: 1.5rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .activite-nom {
+        font-size: 0.8rem;
+        column-count: 1;
+        margin-bottom: 3rem;
+    }
+
+
+    .activite {
+        font-size: 1.5rem;
+    }
+
+    /** Page Membre. */
+
+    .text-membre {
+        top: 47%;
+    }
+}
+
+
+/** Écrans @< 550px.*/
+
+
+@media (max-width: 550px) {
+
+    /** page activites, moniteur. */
+
+    .text-bio p {
+        display: none;
+    }
+
+    .text-bio {
+        top: 25%;
+        left: 70%;
+        min-width: 45%;
+    }
+
+    .text-bio h3 {
+        font-size: 10vw;
+        margin-bottom: 1vh;
+    }
+
+    .text-bio h4 {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .trait {
+        width: 8vw;
+    }
+
+    /** Page activités, activite. */
+
+    .horaire {
+        color: red;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .activite {
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1rem;
+    }
+
+
+    .trait-activite {
+        width: 8vw;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .activite-nom {
+        margin-top: 0.8rem;
+    }
+
+    .activite-nom {
+        column-count: 1;
+        text-transform: uppercase;
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+
+    
+    .container-activites {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
+    /** Page inscription.*/
+
+
+    .inscription {
+        min-height: 85vh;
+    }
+
+    h2.card-title-inscription {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    /** Page Membres.*/
+
+
+    .container-activites.membre {
+        min-height: 115vh;
+    }
+
+    .membre table {
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .table td,
+    .table th {
+        font-size: 0.7rem;
+        padding: 0.6rem 0;
+    }
+
+    .formulaire-activites button {
+        margin-top: 2rem;
+    }
+
+    .bouton-inscrire.btn-secondary {
+        color: #fff;
+        background-color: #777777 !important;
+        border-color: #5c5c5c !important;
+        color: white;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        border-radius: 0.20rem !important;
+    }
+
+    .message-acueil {
+        margin-bottom: 0.8rem;
+    }
+
+    .message-acueil p {
+        font-size: 0.8rem;
+    }
+
+    .message-acueil h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-membre {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        max-width: 35%;
+        min-width: 90%;
+        text-align: center;
+    }
+    
+    .container-activites {
+        height: 110vh;
+        overflow: hidden;
+    }
+    
+    .biopic img.muscu {
+    opacity: 1;
+    object-position: 40% ;
+
+}
+    
+    .biopic img.natation {
+    opacity: 1;
+    object-position: 30% ;
+
+}  
+    .biopic img.yoga {
+    opacity: 1;
+    object-position: 42% ;
+
+}  
+   
+    .biopic img.tennis {
+    opacity: 1;
+    object-position: 27%;
+
+}
+    
+    
+    .biopic img.basket {
+    opacity: 1;
+    object-position: 27%;
+
+}
+    
+    
+    .biopic img.fitness {
+    opacity: 1;
+    object-position: 50%;
+    height: 100%;
+}
+    
+    
+}
+
+
+/** Écrans @< 375px.*/
+
+@media (max-width: 376px) {
+    .container-activites.membre {
+        min-height: 135vh;
+    }
+    .container-activites {
+        height: 90vh;
+        overflow: hidden;
+    }
+}
+
+/** Écrans @< 365px.*/
+
+@media (max-width: 365px) {
+    .container-activites {
+        height: 130vh;
+        overflow: hidden;
+    }
+    .text-membre {
+        top: 45%;
+    }
+}
+
+/** Écrans @< 375px et hauteur @>810px.*/
+
+@media (max-width: 375px) and (min-height: 810px) {
+    .container-activites.membre {
+        min-height: 105vh;
+    }
+}
+
+/** Écrans @< 320px.*/
+
+@media (max-width: 320px) {
+    .container-activites.membre {
+        min-height: 155vh;
+    }
+    .container-activites {
+        min-height: 145vh;
+    }
+}
